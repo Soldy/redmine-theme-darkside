@@ -1,0 +1,95 @@
+@import url(../../../stylesheets/application.css);
+
+body, #wrapper { background-color:#666; }
+#header, #top-menu { margin: 0; background:#000;color:#aaa}
+#main { background: #111; margin: 8px 10px 0px 10px; }
+#content, #main.nosidebar #content { background: #222; color:#ddd; border: 1px solid #777; }
+#footer { background-color:#000; border: 0px; }
+
+/* Headers */
+h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {border-bottom: 0px;}
+
+/* Menu */
+#main-menu li a { background-color: #222; font-weight: bold; color:#999}
+#main-menu li a:hover { background: #222; text-decoration: underline; color:#aaa}
+#main-menu li a.selected, #main-menu li a.selected:hover { background-color:#111; }
+
+/* Tables */
+table.list tbody td, table.list tbody tr:hover td { border: solid 1px #d7d7d7; }
+table.list thead th {
+    background:#222;
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: #d7d7d7;
+    border-right-color: #d7d7d7;
+    border-left-color: #d7d7d7;
+    border-bottom-color: #999999;
+}
+
+/* Issues grid styles by priorities (provided by Wynn Netherland) */
+table.list tr.issue a { color: #ddd; }
+
+tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; }
+tr.odd.priority-highest { background: #555; }
+tr.even.priority-highest, table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; }
+tr.even.priority-highest { background: #444; }
+tr.priority-highest a, tr.priority-5:hover a { color: #900; }
+tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #ffb4b4; }
+
+tr.odd.priority-high2, table.list tbody tr.odd.priority-high4:hover { color: #900; }
+tr.odd.priority-high2 { background: #444; }
+tr.even.priority-high2, table.list tbody tr.even.priority-high4:hover { color: #900; }
+tr.even.priority-high2 { background: #555; }
+tr.priority-high2 a { color: #900; }
+tr.odd.priority-high2 td, tr.even.priority-high4 td { border-color: #ffb4b4; }
+
+tr.odd.priority-high3, table.list tbody tr.odd.priority-high3:hover { color: #900; }
+tr.odd.priority-high3 { background: #444; }
+tr.even.priority-high3, table.list tbody tr.even.priority-high3:hover { color: #900; }
+tr.even.priority-high3 { background: #555; }
+tr.priority-high3 a { color: #900; }
+tr.odd.priority-high3 td, tr.even.priority-high3 td { border-color: #fcc; }
+
+tr.odd.priority-lowest, table.list tbody tr.odd.priority-lowest:hover { color: #559; }
+tr.odd.priority-lowest { background: #444; }
+tr.even.priority-lowest, table.list tbody tr.even.priority-lowest:hover { color: #559; }
+tr.even.priority-lowest { background: #555; }
+tr.priority-lowest a { color: #559; }
+tr.odd.priority-lowest td, tr.even.priority-lowest td { border-color: #add7f3; }
+
+.odd{
+    background: #111;
+}
+
+.even{
+    background: #222;
+}
+
+
+#login-form table {
+    margin-top: 5em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #444;
+    background: #333;
+}
+
+
+a{
+    color:#aaa;
+}
+/* Buttons */
+input[type="button"], input[type="submit"], input[type="reset"], button, , .jstElements button { background-color: #111; color: #ccc; border: 1px outset #555; }
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .jstElements:hover, .jstElements button:hover  { background-color: #111; border: 1px inset #555;}
+
+/* Fields */
+input[type="text"], input[type="password"], textarea, select { padding: 2px; border: 1px solid #555;color:#ddd;background:#222; }
+input[type="text"], input[type="password"] { padding: 3px; }
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus { border: 2px solid #555; }
+button{}
+option { border-bottom: 1px dotted #d7d7d7; }
+.jstElements{display:none;}
+
+/* Misc */
+.box { background-color: #111; #color:#eee;border:solid 1px #888; }
