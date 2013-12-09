@@ -4,6 +4,14 @@ body, #wrapper { background-color:#666; }
 #header, #top-menu { margin: 0; background:#000;color:#aaa}
 #main { background: #111; margin: 8px 10px 0px 10px; }
 #content, #main.nosidebar #content { background: #222; color:#ddd; border: 1px solid #777; }
+#content .tabs ul li {background:#444;}
+
+#content .tabs ul li a{background:#444;}
+
+#content .tabs ul li a.selected{background:#111;}
+
+#admin-menu a.selected{color:#111;}
+
 #footer { background-color:#000; border: 0px; }
 
 /* Headers */
@@ -13,9 +21,12 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {border-bottom: 0px;}
 #main-menu li a { background-color: #222; font-weight: bold; color:#999}
 #main-menu li a:hover { background: #222; text-decoration: underline; color:#aaa}
 #main-menu li a.selected, #main-menu li a.selected:hover { background-color:#111; }
+div.issue{background:#111;}
 
 /* Tables */
-table.list tbody td, table.list tbody tr:hover td { border: solid 1px #d7d7d7; }
+table.progress td.todo{background:#111;}
+table.progress td.closed{background:#005f00;}
+table.list tbody td, table.list tbody td { border: solid 1px #d7d7d7; }
 table.list thead th {
     background:#222;
     border-width: 1px;
@@ -28,40 +39,49 @@ table.list thead th {
 
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
 table.list tr.issue a { color: #ddd; }
-
-tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; }
+tr:hover .even:hover{background:#333;}
+tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; background: #333;}
 tr.odd.priority-highest { background: #555; }
-tr.even.priority-highest, table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; }
+tr.even.priority-highest, table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; background: #333;}
 tr.even.priority-highest { background: #444; }
-tr.priority-highest a, tr.priority-5:hover a { color: #900; }
-tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #ffb4b4; }
+tr.priority-highest a, tr.priority-5:hover a { color: #900; background: #333;}
+tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #ffb4b4; background: #333;}
 
-tr.odd.priority-high2, table.list tbody tr.odd.priority-high4:hover { color: #900; }
+tr.odd.priority-high2, table.list tbody tr.odd.priority-high4:hover { color: #900;background: #333;}
 tr.odd.priority-high2 { background: #444; }
-tr.even.priority-high2, table.list tbody tr.even.priority-high4:hover { color: #900; }
+tr.even.priority-high2, table.list tbody tr.even.priority-high4:hover { color: #900;background: #333; }
 tr.even.priority-high2 { background: #555; }
 tr.priority-high2 a { color: #900; }
 tr.odd.priority-high2 td, tr.even.priority-high4 td { border-color: #ffb4b4; }
 
-tr.odd.priority-high3, table.list tbody tr.odd.priority-high3:hover { color: #900; }
+tr.odd.priority-high3, table.list tbody tr.odd.priority-high3:hover { color: #900; background: #333;}
 tr.odd.priority-high3 { background: #444; }
-tr.even.priority-high3, table.list tbody tr.even.priority-high3:hover { color: #900; }
+tr.even.priority-high3, table.list tbody tr.even.priority-high3:hover { color: #900; background: #333; }
 tr.even.priority-high3 { background: #555; }
 tr.priority-high3 a { color: #900; }
 tr.odd.priority-high3 td, tr.even.priority-high3 td { border-color: #fcc; }
 
-tr.odd.priority-lowest, table.list tbody tr.odd.priority-lowest:hover { color: #559; }
+tr.odd.priority-lowest, table.list tbody tr.odd.priority-lowest:hover { color: #559;background: #333; }
 tr.odd.priority-lowest { background: #444; }
-tr.even.priority-lowest, table.list tbody tr.even.priority-lowest:hover { color: #559; }
+tr.even.priority-lowest, table.list tbody tr.even.priority-lowest:hover { color: #559;background: #333; }
 tr.even.priority-lowest { background: #555; }
 tr.priority-lowest a { color: #559; }
-tr.odd.priority-lowest td, tr.even.priority-lowest td { border-color: #add7f3; }
-
+tr.odd.priority-lowest td, tr.even.priority-lowest td { border-color: #add7f3; background: #333;}
+table.list tbody tr:hover {background:#000;}
 .odd{
     background: #111;
 }
 
 .even{
+    background: #222;
+}
+
+
+.odd:hover{
+    background: #111;
+}
+
+.even:hover{
     background: #222;
 }
 
