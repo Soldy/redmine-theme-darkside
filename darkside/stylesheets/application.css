@@ -100,8 +100,11 @@ a{
     color:#aaa;
 }
 /* Buttons */
-input[type="button"], input[type="submit"], input[type="reset"], button, , .jstElements button { background-color: #111; color: #ccc; border: 1px outset #555; }
-input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .jstElements:hover, .jstElements button:hover  { background-color: #111; border: 1px inset #555;}
+
+
+
+input[type="button"], input[type="submit"], input[type="reset"], button, .jstElements, .jstElements button { background-color: #ccc; color: #333; border: 1px solid #555; }
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .jstElements:hover, .jstElements button:hover  { color: #555;}
 
 /* Fields */
 input[type="text"], input[type="password"], textarea, select { padding: 2px; border: 1px solid #555;color:#ddd;background:#222; }
