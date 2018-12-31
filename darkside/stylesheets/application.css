@@ -67,6 +67,15 @@ tr.even.priority-lowest, table.list tbody tr.even.priority-lowest:hover { color:
 tr.even.priority-lowest { background: #555; }
 tr.priority-lowest a { color: #559; }
 tr.odd.priority-lowest td, tr.even.priority-lowest td { border-color: #add7f3; background: #333;}
+table.cal thead th {
+    background-color: #000;
+}
+table.cal td.week-number {
+    background-color: #000;
+}
+table.cal td.today {
+    background: #222;
+}
 table.list tbody tr:hover {background:#000;}
 .odd{
     background: #111;
@@ -129,4 +138,7 @@ option { border-bottom: 1px dotted #d7d7d7; }
 .syntaxhl .s2 {
     background-color: #080d27;
     color: #458c0c;
+}
+.grantt_hdr{
+    background: #000 !important;
 }
