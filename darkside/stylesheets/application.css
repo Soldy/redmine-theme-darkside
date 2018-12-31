@@ -116,3 +116,11 @@ option { border-bottom: 1px dotted #d7d7d7; }
 
 /* Misc */
 .box { background-color: #111; #color:#eee;border:solid 1px #888; }
+
+.syntaxhl{
+    background-color: #000;
+}
+.syntaxhl .s2 {
+    background-color: #080d27;
+    color: #458c0c;
+}
