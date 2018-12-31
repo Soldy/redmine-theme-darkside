@@ -84,6 +84,9 @@ table.list tbody tr:hover {background:#000;}
 .even:hover{
     background: #222;
 }
+#main-menu li a.new-object {
+    background-color: #222;
+}
 
 
 #login-form table {
