@@ -110,6 +110,14 @@ table.list tbody tr:hover {background:#000;}
     background: #333;
 }
 
+#login-form {
+    margin: 5em auto 2em auto;
+    padding: 20px;
+    width: 340px;
+    border: 1px solid #aaa;
+    background-color: #000;
+    box-sizing: border-box;
+}
 
 a{
     color:#aaa;
